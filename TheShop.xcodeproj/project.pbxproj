@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9104EF3D17407A31009A1F9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9104EF3C17407A31009A1F9C /* UIKit.framework */; };
+		9104EF3F17407A31009A1F9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9104EF3E17407A31009A1F9C /* Foundation.framework */; };
+		9104EF4117407A31009A1F9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9104EF4017407A31009A1F9C /* CoreGraphics.framework */; };
+		9104EF4317407A31009A1F9C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9104EF4217407A31009A1F9C /* CoreData.framework */; };
+		9104EF4917407A31009A1F9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9104EF4717407A31009A1F9C /* InfoPlist.strings */; };
+		9104EF4B17407A31009A1F9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF4A17407A31009A1F9C /* main.m */; };
+		9104EF4F17407A31009A1F9C /* UWCEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF4E17407A31009A1F9C /* UWCEAppDelegate.m */; };
+		9104EF5117407A31009A1F9C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9104EF5017407A31009A1F9C /* Default.png */; };
+		9104EF5317407A31009A1F9C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9104EF5217407A31009A1F9C /* Default@2x.png */; };
+		9104EF5517407A31009A1F9C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9104EF5417407A31009A1F9C /* Default-568h@2x.png */; };
+		9104EF5817407A31009A1F9C /* TheShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF5617407A31009A1F9C /* TheShop.xcdatamodeld */; };
+		9104EF6017407A85009A1F9C /* UWCEDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF5F17407A85009A1F9C /* UWCEDataController.m */; };
+		9104EF9017407B3E009A1F9C /* NSLock+UWCELockBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF8017407B3E009A1F9C /* NSLock+UWCELockBlock.m */; };
+		9104EF9117407B3E009A1F9C /* UIImage+UWCEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF8217407B3E009A1F9C /* UIImage+UWCEAdditions.m */; };
+		9104EF9217407B3E009A1F9C /* UWCEHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF8417407B3E009A1F9C /* UWCEHTTPOperation.m */; };
+		9104EF9317407B3E009A1F9C /* UWCEImageCacheImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF8617407B3E009A1F9C /* UWCEImageCacheImage.m */; };
+		9104EF9417407B3E009A1F9C /* UWCEImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF8817407B3E009A1F9C /* UWCEImageCache.m */; };
+		9104EF9517407B3E009A1F9C /* UWCEImageCacheRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF8A17407B3E009A1F9C /* UWCEImageCacheRequest.m */; };
+		9104EF9617407B3E009A1F9C /* UWCEImageScalingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF8C17407B3E009A1F9C /* UWCEImageScalingOperation.m */; };
+		9104EF9717407B3E009A1F9C /* UWCERunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF8F17407B3E009A1F9C /* UWCERunLoopOperation.m */; };
+		9104EF9C17407FFC009A1F9C /* UWCEDataControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF9B17407FFC009A1F9C /* UWCEDataControllerConfig.m */; };
+		9104EFD217413E3C009A1F9C /* UWCEShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EFD117413E3C009A1F9C /* UWCEShopItem.m */; };
+		9104EFD517413E3C009A1F9C /* UWCEShopManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EFD417413E3C009A1F9C /* UWCEShopManifest.m */; };
+		9104EFD817413E3C009A1F9C /* UWCEShopKeyword.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EFD717413E3C009A1F9C /* UWCEShopKeyword.m */; };
+		9104EFDB174140AB009A1F9C /* UWCEDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EFDA174140AB009A1F9C /* UWCEDatabase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9104EF3917407A31009A1F9C /* TheShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9104EF3C17407A31009A1F9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9104EF3E17407A31009A1F9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9104EF4017407A31009A1F9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9104EF4217407A31009A1F9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9104EF4617407A31009A1F9C /* TheShop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheShop-Info.plist"; sourceTree = "<group>"; };
+		9104EF4817407A31009A1F9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9104EF4A17407A31009A1F9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9104EF4C17407A31009A1F9C /* TheShop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheShop-Prefix.pch"; sourceTree = "<group>"; };
+		9104EF4D17407A31009A1F9C /* UWCEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UWCEAppDelegate.h; sourceTree = "<group>"; };
+		9104EF4E17407A31009A1F9C /* UWCEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWCEAppDelegate.m; sourceTree = "<group>"; };
+		9104EF5017407A31009A1F9C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9104EF5217407A31009A1F9C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9104EF5417407A31009A1F9C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9104EF5717407A31009A1F9C /* TheShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheShop.xcdatamodel; sourceTree = "<group>"; };
+		9104EF5E17407A85009A1F9C /* UWCEDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEDataController.h; sourceTree = "<group>"; };
+		9104EF5F17407A85009A1F9C /* UWCEDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEDataController.m; sourceTree = "<group>"; };
+		9104EF7F17407B3E009A1F9C /* NSLock+UWCELockBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLock+UWCELockBlock.h"; sourceTree = "<group>"; };
+		9104EF8017407B3E009A1F9C /* NSLock+UWCELockBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLock+UWCELockBlock.m"; sourceTree = "<group>"; };
+		9104EF8117407B3E009A1F9C /* UIImage+UWCEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UWCEAdditions.h"; sourceTree = "<group>"; };
+		9104EF8217407B3E009A1F9C /* UIImage+UWCEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UWCEAdditions.m"; sourceTree = "<group>"; };
+		9104EF8317407B3E009A1F9C /* UWCEHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEHTTPOperation.h; sourceTree = "<group>"; };
+		9104EF8417407B3E009A1F9C /* UWCEHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEHTTPOperation.m; sourceTree = "<group>"; };
+		9104EF8517407B3E009A1F9C /* UWCEImageCacheImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEImageCacheImage.h; sourceTree = "<group>"; };
+		9104EF8617407B3E009A1F9C /* UWCEImageCacheImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEImageCacheImage.m; sourceTree = "<group>"; };
+		9104EF8717407B3E009A1F9C /* UWCEImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEImageCache.h; sourceTree = "<group>"; };
+		9104EF8817407B3E009A1F9C /* UWCEImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEImageCache.m; sourceTree = "<group>"; };
+		9104EF8917407B3E009A1F9C /* UWCEImageCacheRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEImageCacheRequest.h; sourceTree = "<group>"; };
+		9104EF8A17407B3E009A1F9C /* UWCEImageCacheRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEImageCacheRequest.m; sourceTree = "<group>"; };
+		9104EF8B17407B3E009A1F9C /* UWCEImageScalingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEImageScalingOperation.h; sourceTree = "<group>"; };
+		9104EF8C17407B3E009A1F9C /* UWCEImageScalingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEImageScalingOperation.m; sourceTree = "<group>"; };
+		9104EF8D17407B3E009A1F9C /* UWCERunLoopOperation_Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCERunLoopOperation_Internals.h; sourceTree = "<group>"; };
+		9104EF8E17407B3E009A1F9C /* UWCERunLoopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCERunLoopOperation.h; sourceTree = "<group>"; };
+		9104EF8F17407B3E009A1F9C /* UWCERunLoopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCERunLoopOperation.m; sourceTree = "<group>"; };
+		9104EF9A17407FFC009A1F9C /* UWCEDataControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEDataControllerConfig.h; sourceTree = "<group>"; };
+		9104EF9B17407FFC009A1F9C /* UWCEDataControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEDataControllerConfig.m; sourceTree = "<group>"; };
+		9104EFD017413E3C009A1F9C /* UWCEShopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEShopItem.h; sourceTree = "<group>"; };
+		9104EFD117413E3C009A1F9C /* UWCEShopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEShopItem.m; sourceTree = "<group>"; };
+		9104EFD317413E3C009A1F9C /* UWCEShopManifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEShopManifest.h; sourceTree = "<group>"; };
+		9104EFD417413E3C009A1F9C /* UWCEShopManifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEShopManifest.m; sourceTree = "<group>"; };
+		9104EFD617413E3C009A1F9C /* UWCEShopKeyword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEShopKeyword.h; sourceTree = "<group>"; };
+		9104EFD717413E3C009A1F9C /* UWCEShopKeyword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEShopKeyword.m; sourceTree = "<group>"; };
+		9104EFD9174140AA009A1F9C /* UWCEDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWCEDatabase.h; sourceTree = "<group>"; };
+		9104EFDA174140AB009A1F9C /* UWCEDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWCEDatabase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9104EF3617407A31009A1F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9104EF3D17407A31009A1F9C /* UIKit.framework in Frameworks */,
+				9104EF3F17407A31009A1F9C /* Foundation.framework in Frameworks */,
+				9104EF4117407A31009A1F9C /* CoreGraphics.framework in Frameworks */,
+				9104EF4317407A31009A1F9C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9104EF3017407A31009A1F9C = {
+			isa = PBXGroup;
+			children = (
+				9104EF4417407A31009A1F9C /* TheShop */,
+				9104EF3B17407A31009A1F9C /* Frameworks */,
+				9104EF3A17407A31009A1F9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9104EF3A17407A31009A1F9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9104EF3917407A31009A1F9C /* TheShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9104EF3B17407A31009A1F9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9104EF3C17407A31009A1F9C /* UIKit.framework */,
+				9104EF3E17407A31009A1F9C /* Foundation.framework */,
+				9104EF4017407A31009A1F9C /* CoreGraphics.framework */,
+				9104EF4217407A31009A1F9C /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9104EF4417407A31009A1F9C /* TheShop */ = {
+			isa = PBXGroup;
+			children = (
+				9104EF4D17407A31009A1F9C /* UWCEAppDelegate.h */,
+				9104EF4E17407A31009A1F9C /* UWCEAppDelegate.m */,
+				9104EF7D17407AC2009A1F9C /* Data */,
+				9104EF4517407A31009A1F9C /* Supporting Files */,
+			);
+			path = TheShop;
+			sourceTree = "<group>";
+		};
+		9104EF4517407A31009A1F9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9104EF4617407A31009A1F9C /* TheShop-Info.plist */,
+				9104EF4717407A31009A1F9C /* InfoPlist.strings */,
+				9104EF4A17407A31009A1F9C /* main.m */,
+				9104EF4C17407A31009A1F9C /* TheShop-Prefix.pch */,
+				9104EF5017407A31009A1F9C /* Default.png */,
+				9104EF5217407A31009A1F9C /* Default@2x.png */,
+				9104EF5417407A31009A1F9C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9104EF7D17407AC2009A1F9C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9104EF5E17407A85009A1F9C /* UWCEDataController.h */,
+				9104EF5F17407A85009A1F9C /* UWCEDataController.m */,
+				9104EF9A17407FFC009A1F9C /* UWCEDataControllerConfig.h */,
+				9104EF9B17407FFC009A1F9C /* UWCEDataControllerConfig.m */,
+				9104EFD9174140AA009A1F9C /* UWCEDatabase.h */,
+				9104EFDA174140AB009A1F9C /* UWCEDatabase.m */,
+				9104EF9917407B9C009A1F9C /* Model */,
+				9104EF9817407B5B009A1F9C /* Image Cache */,
+				9104EF7E17407ADF009A1F9C /* Networking */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		9104EF7E17407ADF009A1F9C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9104EF7F17407B3E009A1F9C /* NSLock+UWCELockBlock.h */,
+				9104EF8017407B3E009A1F9C /* NSLock+UWCELockBlock.m */,
+				9104EF8E17407B3E009A1F9C /* UWCERunLoopOperation.h */,
+				9104EF8D17407B3E009A1F9C /* UWCERunLoopOperation_Internals.h */,
+				9104EF8F17407B3E009A1F9C /* UWCERunLoopOperation.m */,
+				9104EF8317407B3E009A1F9C /* UWCEHTTPOperation.h */,
+				9104EF8417407B3E009A1F9C /* UWCEHTTPOperation.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		9104EF9817407B5B009A1F9C /* Image Cache */ = {
+			isa = PBXGroup;
+			children = (
+				9104EF8717407B3E009A1F9C /* UWCEImageCache.h */,
+				9104EF8817407B3E009A1F9C /* UWCEImageCache.m */,
+				9104EF8517407B3E009A1F9C /* UWCEImageCacheImage.h */,
+				9104EF8617407B3E009A1F9C /* UWCEImageCacheImage.m */,
+				9104EF8917407B3E009A1F9C /* UWCEImageCacheRequest.h */,
+				9104EF8A17407B3E009A1F9C /* UWCEImageCacheRequest.m */,
+				9104EF8B17407B3E009A1F9C /* UWCEImageScalingOperation.h */,
+				9104EF8C17407B3E009A1F9C /* UWCEImageScalingOperation.m */,
+				9104EF8117407B3E009A1F9C /* UIImage+UWCEAdditions.h */,
+				9104EF8217407B3E009A1F9C /* UIImage+UWCEAdditions.m */,
+			);
+			name = "Image Cache";
+			sourceTree = "<group>";
+		};
+		9104EF9917407B9C009A1F9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9104EF5617407A31009A1F9C /* TheShop.xcdatamodeld */,
+				9104EFD317413E3C009A1F9C /* UWCEShopManifest.h */,
+				9104EFD417413E3C009A1F9C /* UWCEShopManifest.m */,
+				9104EFD017413E3C009A1F9C /* UWCEShopItem.h */,
+				9104EFD117413E3C009A1F9C /* UWCEShopItem.m */,
+				9104EFD617413E3C009A1F9C /* UWCEShopKeyword.h */,
+				9104EFD717413E3C009A1F9C /* UWCEShopKeyword.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9104EF3817407A31009A1F9C /* TheShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9104EF5B17407A31009A1F9C /* Build configuration list for PBXNativeTarget "TheShop" */;
+			buildPhases = (
+				9104EF3517407A31009A1F9C /* Sources */,
+				9104EF3617407A31009A1F9C /* Frameworks */,
+				9104EF3717407A31009A1F9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheShop;
+			productName = TheShop;
+			productReference = 9104EF3917407A31009A1F9C /* TheShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9104EF3117407A31009A1F9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UWCE;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Doug Russell";
+			};
+			buildConfigurationList = 9104EF3417407A31009A1F9C /* Build configuration list for PBXProject "TheShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9104EF3017407A31009A1F9C;
+			productRefGroup = 9104EF3A17407A31009A1F9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9104EF3817407A31009A1F9C /* TheShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9104EF3717407A31009A1F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9104EF4917407A31009A1F9C /* InfoPlist.strings in Resources */,
+				9104EF5117407A31009A1F9C /* Default.png in Resources */,
+				9104EF5317407A31009A1F9C /* Default@2x.png in Resources */,
+				9104EF5517407A31009A1F9C /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9104EF3517407A31009A1F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9104EF4B17407A31009A1F9C /* main.m in Sources */,
+				9104EF4F17407A31009A1F9C /* UWCEAppDelegate.m in Sources */,
+				9104EF5817407A31009A1F9C /* TheShop.xcdatamodeld in Sources */,
+				9104EF6017407A85009A1F9C /* UWCEDataController.m in Sources */,
+				9104EF9017407B3E009A1F9C /* NSLock+UWCELockBlock.m in Sources */,
+				9104EF9117407B3E009A1F9C /* UIImage+UWCEAdditions.m in Sources */,
+				9104EF9217407B3E009A1F9C /* UWCEHTTPOperation.m in Sources */,
+				9104EF9317407B3E009A1F9C /* UWCEImageCacheImage.m in Sources */,
+				9104EF9417407B3E009A1F9C /* UWCEImageCache.m in Sources */,
+				9104EF9517407B3E009A1F9C /* UWCEImageCacheRequest.m in Sources */,
+				9104EF9617407B3E009A1F9C /* UWCEImageScalingOperation.m in Sources */,
+				9104EF9717407B3E009A1F9C /* UWCERunLoopOperation.m in Sources */,
+				9104EF9C17407FFC009A1F9C /* UWCEDataControllerConfig.m in Sources */,
+				9104EFD217413E3C009A1F9C /* UWCEShopItem.m in Sources */,
+				9104EFD517413E3C009A1F9C /* UWCEShopManifest.m in Sources */,
+				9104EFD817413E3C009A1F9C /* UWCEShopKeyword.m in Sources */,
+				9104EFDB174140AB009A1F9C /* UWCEDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9104EF4717407A31009A1F9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9104EF4817407A31009A1F9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9104EF5917407A31009A1F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9104EF5A17407A31009A1F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9104EF5C17407A31009A1F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheShop/TheShop-Prefix.pch";
+				INFOPLIST_FILE = "TheShop/TheShop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9104EF5D17407A31009A1F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheShop/TheShop-Prefix.pch";
+				INFOPLIST_FILE = "TheShop/TheShop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9104EF3417407A31009A1F9C /* Build configuration list for PBXProject "TheShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9104EF5917407A31009A1F9C /* Debug */,
+				9104EF5A17407A31009A1F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9104EF5B17407A31009A1F9C /* Build configuration list for PBXNativeTarget "TheShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9104EF5C17407A31009A1F9C /* Debug */,
+				9104EF5D17407A31009A1F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9104EF5617407A31009A1F9C /* TheShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9104EF5717407A31009A1F9C /* TheShop.xcdatamodel */,
+			);
+			currentVersion = 9104EF5717407A31009A1F9C /* TheShop.xcdatamodel */;
+			path = TheShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9104EF3117407A31009A1F9C /* Project object */;
+}

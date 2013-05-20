@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Item" representedClassName="UWCEShopItem" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="largeVideoPosterFrameURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="smallVideoPosterFrameURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="keywords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Keyword" inverseName="items" inverseEntity="Keyword" syncable="YES"/>
+        <relationship name="manifest" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Manifest" inverseName="items" inverseEntity="Manifest" syncable="YES"/>
+    </entity>
+    <entity name="Keyword" representedClassName="UWCEShopKeyword" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="keywords" inverseEntity="Item" syncable="YES"/>
+        <relationship name="manifest" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Manifest" inverseName="keywords" inverseEntity="Manifest" syncable="YES"/>
+    </entity>
+    <entity name="Manifest" representedClassName="UWCEShopManifest" syncable="YES">
+        <attribute name="created" attributeType="Date" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" minCount="1" deletionRule="Cascade" ordered="YES" destinationEntity="Item" inverseName="manifest" inverseEntity="Item" syncable="YES"/>
+        <relationship name="keywords" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Keyword" inverseName="manifest" inverseEntity="Keyword" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Item" positionX="-2270" positionY="-820" width="128" height="163"/>
+        <element name="Keyword" positionX="-2097" positionY="-990" width="128" height="88"/>
+        <element name="Manifest" positionX="-2477" positionY="-945" width="128" height="88"/>
+    </elements>
+</model>

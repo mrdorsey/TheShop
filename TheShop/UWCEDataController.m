@@ -144,7 +144,7 @@ static NSString *UWCEItemsKey = @"items";
 	{
 		return;
 	}
-	NSURL *url = [NSURL URLWithString:@"?unique=444" relativeToURL:self.currentConfig.shopManifestURL];
+	NSURL *url = [NSURL URLWithString:@"?unique=888" relativeToURL:self.currentConfig.shopManifestURL];
 	if (!url)
 	{
 		return;
@@ -338,15 +338,7 @@ static NSString *UWCEItemsKey = @"items";
 	NSError *error = nil;
 	NSArray *result = [context executeFetchRequest:request error:&error];
 	
-	if (result) {
-		for (UWCEShopManifest *manifest in result) {
-			NSLog(@"%@", [NSDateFormatter localizedStringFromDate:[NSDate date]
-														dateStyle:NSDateFormatterFullStyle
-														timeStyle:NSDateFormatterFullStyle]);
-		}
-	}
-	
-	return result[0];
+	return [result lastObject];
 }
 
 - (UWCEShopManifest *)currentManifest
